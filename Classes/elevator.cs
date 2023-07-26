@@ -16,5 +16,15 @@ namespace Classes{
                 Console.WriteLine("Лифт приехал");
             }
         }
+        
+        void openDoor(){
+            this.doorClose = false;
+            Console.WriteLine("Дверь открыта");
+        }
+
+        void closeDoor(){
+            this.doorClose = true;
+            Console.WriteLine("Дверь закрыта");
+        }
     }
 }
