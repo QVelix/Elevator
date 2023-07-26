@@ -1,6 +1,5 @@
 namespace Classes{
     public class Elevator{
-        private string elevatorStatus = "";
         private int position = 1;
         private bool doorClose = true;
 
@@ -16,7 +15,7 @@ namespace Classes{
                 Console.WriteLine("Лифт приехал");
             }
         }
-        
+
         void openDoor(){
             this.doorClose = false;
             Console.WriteLine("Дверь открыта");
