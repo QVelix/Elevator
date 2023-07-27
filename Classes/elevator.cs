@@ -3,6 +3,14 @@ namespace Classes{
         private int position = 1;
         private string status = "";
 
+        int getPosition(){
+            return this.position;
+        }
+
+        string getStatus(){
+            return this.status;
+        }
+
         void callUp(int floor){
             if(this.checkPositionEqualsFloor(floor)){
                 Console.WriteLine("Лифт уже на этаже");
