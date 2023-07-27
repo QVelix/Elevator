@@ -1,17 +1,17 @@
 namespace Classes{
     public class Elevator{
         private int position = 1;
-        private string status = "";
+        private string status = "Двери закрыты";
 
-        int getPosition(){
+        public int getPosition(){
             return this.position;
         }
 
-        string getStatus(){
+        public string getStatus(){
             return this.status;
         }
 
-        void callUp(int floor){
+        public void callUp(int floor){
             if(this.checkPositionEqualsFloor(floor)){
                 Console.WriteLine("Лифт уже на этаже");
             }else if(this.checkFloorExist(floor)){
@@ -25,14 +25,14 @@ namespace Classes{
             }
         }
 
-        void openDoor(){
+        public void openDoor(){
             this.status = "Двери открываются";
             Console.WriteLine(this.status);
             this.status = "Двери открыты";
             Console.WriteLine(this.status);
         }
 
-        void closeDoor(){
+        public void closeDoor(){
             this.status = "Двери закрываются";
             Console.WriteLine(this.status);
             this.status = "Двери закрыты";
