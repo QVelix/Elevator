@@ -8,7 +8,7 @@ namespace Classes{
         public string buttonStatus = "";
         private Elevator firstElevator, secondElevator; 
 
-        Floor(Elevator firstElevator, Elevator secondElevator){
+        public Floor(Elevator firstElevator, Elevator secondElevator){
             this.firstElevator = firstElevator;
             this.secondElevator = secondElevator;
         }
